@@ -7,6 +7,8 @@
  * Author: Henry Zhang
  */
 
+#include "myslam/common_include.h"
+
 namespace myslam {
 
 class Camera {
@@ -29,6 +31,7 @@ class Camera {
   Mat33 K() const {
     Mat33 K;
     K << fx_, 0, cx_, 0, fy_, cy_, 0, 0, 1;
+    return K;
   }
 
   // coordinate transfomations between world frame, camera frame, and image
