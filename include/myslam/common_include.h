@@ -6,6 +6,21 @@
  * Author: Henry Zhang
  */
 
+// std
+#include <atomic>
+#include <condition_variable>
+#include <iostream>
+#include <list>
+#include <map>
+#include <memory>
+#include <mutex>
+#include <set>
+#include <string>
+#include <thread>
+#include <typeinfo>
+#include <unordered_map>
+#include <vector>
+
 // Sophus
 #include <sophus/se3.hpp>
 #include <sophus/so3.hpp>
@@ -25,5 +40,9 @@ using MatXXf = Eigen::Matrix<float, Eigen::Dynamic, Eigen::Dynamic>;
 using Mat33f = Eigen::Matrix<float, 3, 3>;
 using Vec3f = Eigen::Matrix<float, 3, 1>;
 using Vec2f = Eigen::Matrix<float, 2, 1>;
+
+// OpenCV
+#include <opencv2/core/core.hpp>
+using cv::Mat;
 
 #endif  // MYSLAM_COMMON_INCLUDE_H
