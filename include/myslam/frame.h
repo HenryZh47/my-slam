@@ -36,7 +36,7 @@ struct Frame {
   // set keyframe and assign keyframe id
   void set_keyframe();
   // factory constructor
-  static std::shared_ptr<Frame> create_frame();
+  static Frame::Ptr create_frame();
 
   unsigned long id_ = 0;           // ID of this frame
   unsigned long keyframe_id_ = 0;  // key frame ID of this frame
