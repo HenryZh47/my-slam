@@ -28,6 +28,8 @@ void MapPoint::add_observation(Feature::Ptr feature) {
 }
 
 // TODO (henryzh47): this looks kinda slow, can we do better?
+//                   Depending on how many obersevations, do we need to do
+//                   better?
 void MapPoint::remove_observation(Feature::Ptr feature) {
   std::unique_lock<std::mutex> lock(map_point_mutex_);
   for (auto itr = observations_.begin(); itr != observations_.end(); itr++) {
