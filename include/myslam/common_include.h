@@ -43,6 +43,7 @@ using Vec2f = Eigen::Matrix<float, 2, 1>;
 
 // OpenCV
 #include <opencv2/core/core.hpp>
+#include <opencv2/features2d.hpp>
 using cv::Mat;
 
 #endif  // MYSLAM_COMMON_INCLUDE_H
