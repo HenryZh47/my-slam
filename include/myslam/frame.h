@@ -47,7 +47,7 @@ struct Frame {
 
   // extracted features of left and right images
   std::vector<std::shared_ptr<Feature>> left_features_;
-  std::vector<std::shared_ptr<Feature>> right_features;
+  std::vector<std::shared_ptr<Feature>> right_features_;
 
   double time_stamp_{0.0};  // timestamp of the frame (currently not used)
 
