@@ -7,6 +7,7 @@ chapter 13. Ported to ROS for easier testing and usage.
 
 ## Data Structures
 
+- Camera: camera class to store camera information and transformation methods
 - Frame: a frame of stereo images
 - Feature: 2D position of a feature on the image
 - MapPoint: 3D position of a map point in the map
