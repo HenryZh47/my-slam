@@ -25,7 +25,7 @@ class Camera {
   ~Camera() = default;
 
   // get camera pose
-  SE3 pose() const { return pose_; }
+  SE3 get_pose() const { return pose_; }
 
   // get camera intrinsic matrix
   Mat33 K() const {
