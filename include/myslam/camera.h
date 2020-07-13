@@ -13,6 +13,9 @@ namespace myslam {
 
 class Camera {
  public:
+  EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+  using Ptr = std::shared_ptr<Camera>;
+
   double fx_ = 0, fy_ = 0, cx_ = 0, cy_ = 0;  // camera intrinsics
   double baseline_ = 0;                       // stereo camera baseline
   SE3 pose_;                                  // camera pose
